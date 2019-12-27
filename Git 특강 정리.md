@@ -66,9 +66,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 
-
-
-	* ADD 후 상태
+ * 
+   	* ADD 후 상태
 
 ```bash
 $ git status
@@ -101,6 +100,41 @@ $ git commit -m 'markdown 활용법 추가'
  1 file changed, 125 insertions(+)
  create mode 100644 markdown.md
 ```
+
+* 커밋메시지는 해당 이력을 나타낼 수 있도록 작성하는 것이 중요하고 항상 일관적으로 작성하자.
+
+* 커밋메세지는 아래의 명령어로 확인 가능하다.
+
+```bash
+$git log
+$git log --oneline
+$git log -1
+
+HPE@DESKTOP-DFE1UPJ MINGW64 ~/Desktop/TIL (master)
+$ git log
+commit 6111a7f5408ab798a7767b2d462cdeb135de37ce (HEAD -> master)
+Author: skmoon <star3qp@naver.com>
+Date:   Fri Dec 27 14:19:09 2019 +0900
+
+    markdown 활용법 추가
+
+HPE@DESKTOP-DFE1UPJ MINGW64 ~/Desktop/TIL (master)
+$ git log --oneline
+6111a7f (HEAD -> master) markdown 활용법 추가
+
+HPE@DESKTOP-DFE1UPJ MINGW64 ~/Desktop/TIL (master)
+$ git log -1
+commit 6111a7f5408ab798a7767b2d462cdeb135de37ce (HEAD -> master)
+Author: skmoon <star3qp@naver.com>
+Date:   Fri Dec 27 14:19:09 2019 +0900
+
+    markdown 활용법 추가
+
+```
+
+
+
+* 커밋메시지 참고 ㅣ [toast meetup]([https://meetup.toast.com ' posts](https://meetup.toast.com/posts/106)),  [좋은 커밋메시지]([https://blog.ull.im ' engineering ' 2019/03/10 ' logs-on-git](https://blog.ull.im/engineering/2019/03/10/logs-on-git.html))
 
 
 
